@@ -174,7 +174,7 @@ jobs:
           # Verify the change
           echo "Updated deployment to use image: ${NEW_IMAGE}"
           grep -A 1 "image:" kubernetes/deployment.yaml
-          
+
       - name: Commit and push changes
         run: |
           git add kubernetes/deployment.yaml
